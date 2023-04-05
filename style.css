@@ -1,0 +1,58 @@
+body {
+    font-size: 15pt;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+
+}
+
+.item{
+   display: none;
+   position: absolute;
+   top: 30%;
+}
+
+img{
+  width: 300px;
+  height: 150px;
+  object-fit: cover ;
+}
+
+.active{
+   display: block;
+}
+
+.btns{
+  position:absolute ;
+  top:40%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+button {
+  border: none;
+  outline: none;
+  z-index: 999;
+}
+
+#right{
+  position: absolute;
+  right: 10px;
+  color: blue;
+  font-size: 30px;
+}
+
+#left{
+  position: absolute;
+  left: 10px;
+  color: blue;
+  font-size: 30px;
+}
